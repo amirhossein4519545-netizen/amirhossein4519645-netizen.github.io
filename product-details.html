@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product details - Eternal Flowers luxury preserved rose arrangement.">
+    <title>Product Details | Eternal Flowers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page-product-details">
+
+    <!-- HEADER -->
+    <header class="header header--scrolled" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo" aria-label="Eternal Flowers Home">
+                <span class="logo__icon">✦</span>
+                <span class="logo__text">Eternal<span class="logo__accent">Flowers</span></span>
+            </a>
+            <nav class="nav" id="nav" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="products.html" class="nav__link nav__link--active">Collections</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Our Story</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn--gold btn--sm header__cta">Inquire Now</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="mobile-toggle__bar"></span>
+                <span class="mobile-toggle__bar"></span>
+                <span class="mobile-toggle__bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- PRODUCT DETAILS SECTION -->
+        <section class="section section--product-detail" id="productDetail">
+            <div class="container">
+                <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a> <span>/</span>
+                    <a href="products.html">Collections</a> <span>/</span>
+                    <span id="breadcrumbProduct">Product</span>
+                </nav>
+                <div class="product-detail-main" id="productDetailMain">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- RELATED PRODUCTS -->
+        <section class="section section--related">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__tag">You May Also Like</span>
+                    <h2 class="section__title">Related Arrangements</h2>
+                </div>
+                <div class="related-grid" id="relatedProducts">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <span class="logo__icon">✦</span> Eternal<span class="logo__accent">Flowers</span>
+                    </a>
+                    <p class="footer__desc">Timeless preserved roses and luxury floral arrangements crafted for those who appreciate enduring beauty.</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+                        <a href="#" class="social-link" aria-label="Pinterest">Pinterest</a>
+                        <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collections</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__heading">Collections</h4>
+                    <ul>
+                        <li><a href="products.html?collection=classic">Classic Roses</a></li>
+                        <li><a href="products.html?collection=premium">Premium Boxes</a></li>
+                        <li><a href="products.html?collection=bespoke">Bespoke Art</a></li>
+                        <li><a href="products.html?collection=minimal">Minimal Elegance</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4 class="footer__heading">Stay Inspired</h4>
+                    <p>Receive exclusive previews of new collections and seasonal inspirations.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn--gold btn--sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Eternal Flowers. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/search-filter.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
